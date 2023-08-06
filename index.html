@@ -4,11 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>김효중 이력서</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- JavaScript (jQuery와 Popper.js를 포함해야 함) -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 </head>
 <body>
+
     <nav class="navbar navbar-expand-md navbar-dark bg-dark" aria-label="Fourth navbar example">
-        <div class="container-fluid">
+        <div class="container-fluid ">
           <a class="navbar-brand" href="#">김효중</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -17,33 +24,132 @@
           <div class="collapse navbar-collapse" id="navbarsExample04">
             <ul class="navbar-nav me-auto mb-2 mb-md-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="./">Home</a>
               </li>
-              <li class="nav-item">
+              <!-- <li class="nav-item">
                 <a class="nav-link" href="#">Link</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-              </li>
+              </li> -->
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Projects</a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <li><a class="dropdown-item" href="#">1</a></li>
+                  <li><a class="dropdown-item" href="#">2</a></li>
+                  <li><a class="dropdown-item" href="#">3</a></li>
                 </ul>
               </li>
             </ul>
-            <form role="search">
-              <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-            </form>
           </div>
         </div>
       </nav>
 
-<!-- Bootstrap JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      <!-- dropdown 초기화 -->
+      <script> 
+        $(document).ready(function () {
+          $('.dropdown-toggle').dropdown();
+        });
+      </script>
+      
+      <!--  -->
+      
+      <section class="py-5 text-center container">
+        <div class="row py-lg-5">
+          <div class="col-lg-6 col-md-8 mx-auto">
+            <h1 class="fw-light">Projects</h1>
+            <p class="lead text-body-secondary">제가 그동안 해온 프로젝트들입니다. </p>
+          </div>
+        </div>
+      </section>
+
+      <!--  -->
+
+      <div class="album py-5 bg-body-tertiary">
+        <div class="container">
+
+          <!-- 화재 대피 시뮬 -->
+          <div class="row row-cols-1 row-cols-sm-2 g-3">
+            <div class="col">
+              <div class="card shadow-sm">
+                <video src="./res/시연영상.mp4" autoplay="true" loop="true"></video>
+                <div class="card-body">
+                  <p class="card-text">vr 화재 대비 시뮬레이션입니다.<br>유니티를 활용하여 제작하였고 재미있게 재난 교육을 해보고자 <br>제작하였습니다.</p>
+                  <div class="d-flex justify-content-end align-items-center">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 메타버스 해커톤 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/v351DJXd8A4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen width="50%"></iframe>
+                <div class="card-body">
+                  <p class="card-text">메타버스에 청약을 더했습니다. <br> 이 프로젝트를 통해 사용자들은 청약에 대해 알고 가까워 질수 있습니다.</p>
+                  <div class="d-flex justify-content-end align-items-center">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 캡스톤 장려상 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">성격 검사</text></svg>
+                <div class="card-body">
+                  <p class="card-text">성격유형(big 5)과 게이미피케이션을 접목시킨 성격검사 콘텐츠입니다. <br> 자유롭게 게임을 플레이하면 행동을 파악해 플레이어의 성격을 알려드립니다.</p>
+                  <div class="d-flex justify-content-end align-items-center">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <!--부산 bic 게임잼 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="./res/project cono 1-1.png" alt="project">
+                <div class="card-body">
+                  <p class="card-text">대학 조교가 되어 과제를 채점하는 게임입니다. <br> 유니티를 활용하여 제작하였고 프로그래밍을 담당하였습니다.</p>
+                  <div class="d-flex justify-content-end align-items-center">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 언리얼 연습 과제 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <video src="./res/중간과제 2018661018.mp4" autoplay="true" loop="true" muted="true"></video>
+                <div class="card-body">
+                  <p class="card-text">언리얼 엔진을 활용한 간단한 게임입니다. <br>다가오는 적들을 처치하면서 오래 살아남으면 됩니다.</p>
+                  <div class="d-flex justify-content-end align-items-center">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                </div>
+                </div>
+              </div>
+            </div>
+    
+            <!-- 아래 코드에 프로젝트 설명하여 추가하기 -->
+            <!-- <div class="col">
+              <div class="card shadow-sm">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                <div class="card-body">
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <div class="d-flex justify-content-end align-items-center">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                </div>
+                </div>
+              </div>
+            </div> -->
+            
+          </div>
+        </div>
+      </div>
 
 </body>
 </html>
