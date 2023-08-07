@@ -1,2 +1,2 @@
-# hyojung-cv
-my cv
+# hyojung-projects
+my projects
